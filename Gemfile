@@ -29,3 +29,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml', '~> 4.1.0.beta.1'
 gem 'simple_form', '~> 3.4'
 gem 'devise', '~> 4.2'
+gem 'coffee-script-source', '1.8.0'
