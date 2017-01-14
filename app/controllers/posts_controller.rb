@@ -10,11 +10,12 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post.user = current_user
+    @post = current_user.posts.build
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
     if @post.save
       redirect_to @post
     else
@@ -27,6 +28,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.find params[:id]
   end
 
   def edit
@@ -42,7 +44,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-       @post.destroy
+       @post.destroy(post_params)
       redirect_to root_path
   end
 
