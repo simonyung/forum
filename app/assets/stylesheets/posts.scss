@@ -68,3 +68,20 @@ body{
     }
   }
 }
+#post_content {
+  background: white;
+  padding: 2em 5%;
+  border-radius:0.5em;
+  h1 {
+    font-weight: 100;
+    font-size: 3rem;
+    color: chocolate;
+    margin-top: 0;
+  }
+  p {
+    color: blue;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.5;
+  }
+}
