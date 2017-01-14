@@ -24,11 +24,13 @@ body{
   background: snow;
   #logo{
     float: left;
-    p{
+    a{
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: -1px;
       font-size: 1.5rem;
+      text-decoration: none;
+      color: chocolate;
     }
   }
   #button{
@@ -57,7 +59,7 @@ body{
       a{
         color: chocolate;
         text-decoration: none;
-        font-weight: 800;
+        font-weight: 600;
         font-size: 2rem;
       }
     }
